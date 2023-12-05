@@ -1,4 +1,4 @@
-# fekakomon.php
+# fekakomon.php auto sctipt
 
 # 過去問道場AutoScript
 
