@@ -1,0 +1,107 @@
+/* リセット、共通スタイルなど */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,main,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+/* ダークモード */
+.dark-mode {
+background-color: #333;
+color: #fff;
+}
+
+header, footer {
+padding: 20px;
+}
+
+h1 {
+font-size: 2em;
+text-align: center;
+white-space: nowrap;
+margin: 40px auto 40px auto;
+padding: 10px;
+}
+header p {
+font-size: 1.2em;
+}
+
+button {
+padding: 10px 20px;
+font-size: 1.2em;
+background-color: #3897f0;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+button:hover {
+background-color: #276b8c;
+}
+
+.switch {
+    display: inline-block;
+    position: relative;
+    width: 44px;
+    height: 22px
+}
+
+.switch__checkbox {
+    display: none
+}
+
+.switch__checkbox:checked+.switch__slider {
+    background-color: #2b2b2b
+}
+
+.switch__checkbox:checked+.switch__slider:before {
+    -webkit-transform: translateX(22px);
+    transform: translateX(22px)
+}
+
+.switch__slider {
+    border-radius: 11px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: #ccc;
+    background-image: url(../icon/sun.svg),url(../icon/moon.svg);
+    background-position: 4px center,calc(100% - 4px) center;
+    background-repeat: no-repeat,no-repeat;
+    background-size: 14px 14px,14px 14px
+}
+
+.animated .switch__slider {
+    -webkit-transition: .4s;
+    transition: .4s
+}
+
+.switch__slider:before {
+    border-radius: 7px;
+    content: "";
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    height: 14px;
+    width: 14px;
+    background-color: #fff
+}
+
+.animated .switch__slider:before {
+    -webkit-transition: .4s;
+    transition: .4s
+}
